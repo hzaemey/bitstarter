@@ -4,6 +4,7 @@ app.use(express.logger());
 
 app.get('/', function(request, response) {
   response.send('Hello World 2!');
+  fs.writeFile('index.html');
 });
 
 var port = process.env.PORT || 5000;
